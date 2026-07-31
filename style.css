@@ -19,3 +19,9 @@ a {
   color: blue;
   text-decoration: underline;
 }
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chart-title chart-description" viewBox="0 0 720 116">
+  <title id="chart-title">GitHub contribution chart</title>
+  <desc id="chart-description">The contribution chart will appear after its first automatic update.</desc>
+  <rect width="720" height="116" rx="6" fill="#f6f8fa"/>
+  <text x="360" y="62" text-anchor="middle" fill="#57606a" font-family="Arial, sans-serif" font-size="13">
+    Contribution chart awaiting its first automatic update
+  </text>
+</svg>

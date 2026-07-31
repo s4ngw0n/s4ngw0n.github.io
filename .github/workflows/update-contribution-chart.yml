@@ -1,0 +1,54 @@
+name: Update contribution chart
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - index.html
+      - scripts/generate-contributions.mjs
+      - .github/workflows/update-contribution-chart.yml
+  schedule:
+    # GitHub Actions uses UTC. 15:00 UTC is 00:00 KST the following day.
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-contribution-chart
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate contribution chart
+        run: node scripts/generate-contributions.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: s4ngw0n
+
+      - name: Commit updated chart
+        run: |
+          git add assets/github-contributions.svg
+
+          if git diff --cached --quiet; then
+            echo "Contribution chart is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update contribution chart"
+          git push
