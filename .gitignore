@@ -1,0 +1,6 @@
+#macOS
+.DS_Store
+
+#TeX build folder
+CV/build/*
+!CV/build/*.pdf
