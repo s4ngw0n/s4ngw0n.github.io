@@ -3,4 +3,3 @@
 
 #TeX build folder
 CV/build/*
-!CV/build/*.pdf
