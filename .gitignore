@@ -3,3 +3,4 @@
 
 #TeX build folder
 CV/build/*
+*.synctex.gz
