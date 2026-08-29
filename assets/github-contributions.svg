@@ -1084,7 +1084,7 @@
   <rect x="681" y="72" width="10" height="10" rx="2" fill="#40c463">
     <title>2026-08-13: 4 contributions</title>
   </rect>
-  <rect x="681" y="85" width="10" height="10" rx="2" fill="#40c463">
+  <rect x="681" y="85" width="10" height="10" rx="2" fill="#30a14e">
     <title>2026-08-14: 5 contributions</title>
   </rect>
   <rect x="681" y="98" width="10" height="10" rx="2" fill="#216e39">
@@ -1102,7 +1102,7 @@
   <rect x="694" y="59" width="10" height="10" rx="2" fill="#40c463">
     <title>2026-08-19: 4 contributions</title>
   </rect>
-  <rect x="694" y="72" width="10" height="10" rx="2" fill="#40c463">
+  <rect x="694" y="72" width="10" height="10" rx="2" fill="#30a14e">
     <title>2026-08-20: 5 contributions</title>
   </rect>
   <rect x="694" y="85" width="10" height="10" rx="2" fill="#216e39">
@@ -1123,10 +1123,13 @@
   <rect x="707" y="59" width="10" height="10" rx="2" fill="#9be9a8">
     <title>2026-08-26: 2 contributions</title>
   </rect>
-  <rect x="707" y="72" width="10" height="10" rx="2" fill="#40c463">
+  <rect x="707" y="72" width="10" height="10" rx="2" fill="#30a14e">
     <title>2026-08-27: 5 contributions</title>
   </rect>
-  <rect x="707" y="85" width="10" height="10" rx="2" fill="#ebedf0">
-    <title>2026-08-28: 0 contributions</title>
+  <rect x="707" y="85" width="10" height="10" rx="2" fill="#30a14e">
+    <title>2026-08-28: 5 contributions</title>
+  </rect>
+  <rect x="707" y="98" width="10" height="10" rx="2" fill="#ebedf0">
+    <title>2026-08-29: 0 contributions</title>
   </rect>
 </svg>
